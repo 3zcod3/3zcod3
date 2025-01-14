@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ZCOD3 Games - Best Free Android Games</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="b.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-weight: 500;
+            color: #FF7A18; /* Theme color */
+			line-height:60px;
+        }
+        p, a {
+            font-weight: 300;
+        }
+        .download-btn {
+            font-weight: 400;
+        }
+		 #slideshow {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+		
+    }
+    .slideshow-container {
+        position: relative;
+		opacity:99%;
+    }
+    .slide {
+        display:none;
+        position: relative;
+    }
+    .slide img {
+        width: 100%;
+        height: auto;
+		
+    }
+    .slide-text {
+        position: absolute;
+		opacity:50%;
+        bottom: 5px;
+        left: 5px;
+        color: #fff;
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+        margin: auto;
+        padding-top: 10px;
+        
+    }
+    .dots {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+		padding-left:20px;
+		padding-right:20px;
+        background-color: blue;
+        border-radius: 30%;
+        display: inline-block;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+    .active, .dot:hover {
+        background-color: #FF7A18;
+    }
+
+    </style>  
+	 <script>
+	 function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+	
+	
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 6000); // Change slide every 3 seconds
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+</script>
+</head>
+<body>
+
+
+    <header>
+        <img class="profile-img" src="b.jpg" alt="3ZCOD3 Logo">
+        <h1>Welcome to 3ZCOD3 Games</h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="mailto:3zcod3@gmail.com">Contact Us</a>
+        </nav>
+    </header>
+	
+	<section id="slideshow">
+    <div class="slideshow-container">
+
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="frlegends.jpg" alt="FR Legends">
+            <div class="slide-text">
+                <h3>FR Legends</h3>
+                <p>Exciting drifting and customization game, perfect for low-end devices.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="realracing3.jpg" alt="Real Racing 3">
+			
+            <div class="slide-text">
+                <h3>Real Racing 3</h3>
+                <p>Immerse yourself in high-speed racing action with stunning graphics.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="pubg.jpg" alt="PUBG Mobile">
+            <div class="slide-text">
+                <h3>PUBG Mobile</h3>
+                <p>Experience intense Battle Royale gameplay with survival elements.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide fade">
+            <img src="minecraft.jpg" alt="Minecraft">
+            <div class="slide-text">
+                <h3>Minecraft</h3>
+                <p>Create and explore endless worlds in this sandbox classic.</p>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide fade">
+            <img src="amongus.jpg" alt="Among Us">
+            <div class="slide-text">
+                <h3>Among Us</h3>
+                <p>Multiplayer game of teamwork and betrayal set in space.</p>
+            </div>
+        </div>
+
+        <!-- Add additional slides for each game as needed -->
+        
+        <!-- Navigation dots -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <!-- Add more dots based on the number of slides -->
+        </div>
+    </div>
+</section>
+
+    <section class="intro">
+	    <p>Click the Dashes</p>
+        <h2>Explore the Best Games for Android Devices</h2>
+        <p>
+            Discover a collection of carefully crafted games designed to offer endless fun and immersive experiences for players of all kinds. At <strong>3ZCOD3 Games</strong>, we specialize in delivering free, high-quality games optimized for Android, ensuring smooth gameplay on both low-end and high-performance devices.
+        </p>
+        <p>
+            <strong>All games are free to download and play</strong>, and our library includes something for everyone—from racing and action to casual adventures, each game promises hours of entertainment.
+        </p>
+    </section>
+
+   <section id="game-catalog">
+    <h2>Our Games</h2>
+    <div class="game-grid">
+        
+        <!-- Game Card 1 -->
+        <div class="game-card">
+            <div class="game-info">
+                <img src="frlegends.jpg" alt="FR Legends">
+                <h3>FR Legends</h3>
+                <p>A drifting and customization game that lets you experience thrilling racing action.</p>
+                <p>For low-end devices (1 GB RAM).</p>
+            </div>
+            <div class="download-options">
+                <h4>Direct Download:</h4>
+                <a href="FRlegends.apk" class="download-btn">Download</a>
+                <p class="file-info">File size: 106 MB | Version: 1.2.1 | Last updated: 2024-07-15</p>
+            </div>
+        </div>
+
+        <!-- Game Card 2 -->
+        <div class="game-card">
+            <div class="game-info">
+                <img src="realracing3.jpg" alt="Real Racing 3">
+				<video width="400" controls>
+                     <source src="realracing3.mp4" type="video/mp4">
+                      Realracing3
+                </video>
+                <h3>Real Racing 3</h3>
+                <p>An immersive high-speed racing game with detailed graphics and expansive gameplay.</p>
+                <p>Recommended for medium-end devices (4 GB RAM).</p>
+            </div>
+            <div class="download-options">
+                <h4>Direct Download:</h4>
+                <a href="Realracing3.apk" class="download-btn">Download</a>
+                <p class="file-info">File size: 60 MB | Version: 2.0.0 | Last updated: 2024-07-20</p>
+            </div>
+        </div>
+
+        <!-- Additional Game Cards -->
+        <!-- Game Card 3 -->
+        <div class="game-card">
+            <div class="game-info">
+                <img src="pubg.jpg" alt="PUBG Mobile">
+                <h3>PUBG Mobile</h3>
+                <p>Battle Royale shooter with intense survival-based gameplay.</p>
+                <p>For high-end devices (4+ GB RAM).</p>
+            </div>
+            <div class="download-options">
+                <h4>Direct Download:</h4>
+                <a href="pubgmobile.apk" class="download-btn">Download</a>
+                <p class="file-info">File size: 1.5 GB | Version: 2.1.0 | Last updated: 2024-06-25</p>
+            </div>
+        </div>
+
+        <!-- Game Card 4 -->
+        <div class="game-card">
+            <div class="game-info">
+                <img src="minecraft.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>A sandbox game that allows players to build, explore, and survive in endless worlds.</p>
+                <p>For mid- to high-end devices (2+ GB RAM).</p>
+            </div>
+            <div class="download-options">
+                <h4>Direct Download:</h4>
+                <a href="minecraft.apk" class="download-btn">Download</a>
+                <p class="file-info">File size: 150 MB | Version: 1.20.0 | Last updated: 2024-05-10</p>
+            </div>
+        </div>
+
+        <!-- Game Card 5 -->
+        <div class="game-card">
+            <div class="game-info">
+                <img src="amongus.jpg" alt="Among Us">
+                <h3>Among Us</h3>
+                <p>Multiplayer game of teamwork and betrayal set in space.</p>
+                <p>For low- to mid-end devices (1+ GB RAM).</p>
+            </div>
+            <div class="download-options">
+                <h4>Direct Download:</h4>
+                <a href="amongus.apk" class="download-btn">Download</a>
+                <p class="file-info">File size: 70 MB | Version: 3.5.2 | Last updated: 2024-06-01</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <section class="contact-info">
+		 <p><a href="page2.html">Discover more games on the next page &raquo;</a></p>
+            <h2>Connect with Us</h2>
+            <a href="mailto:3zcod3@gmail.com">Have questions or need assistance? Reach out anytime<br>3zcod3@gmail.com</a>
+            <p>&copy; 2024 3ZCOD3 Games. All rights reserved.</p>
+        </section>
+    </footer>
+	<div class="go-to-top" onclick="scrollToTop()">&#8679;</div>
+</body>
+</html>
